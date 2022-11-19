@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MaterialDesign2</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="cancel">Cancel</string>
+    <string name="WSR">WSR Connect</string>
+    <string name="Profile">My account</string>
+</resources>

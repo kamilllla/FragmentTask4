@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleCentered="true"
+        style="@style/Appbar" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cat" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Profile"
+                android:textSize="30sp"
+                android:layout_gravity="bottom"
+                style="@style/TextProfile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Profile"
+                android:textSize="20sp"
+                style="@style/TextProfile"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelName"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/name"
+        style="@style/Text" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldName"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextLAyout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelMail"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/email"
+        style="@style/Text"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldMail"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:background="@color/light_blue"
+            android:drawableEnd="@drawable/ic_create"
+            android:drawableTint="@color/blue"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/labelPassword"
+        style="@style/Text"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/password" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldPass"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="8dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextLAyout2"
+            android:layout_width="302dp"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_marginStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_create"
+                app:tint="@color/blue" />
+
+            <View
+                android:id="@+id/delimeter_view"
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/light_grey" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        style="@style/Button"
+        android:layout_gravity="center"
+        app:strokeColor="@color/blue"
+        android:textColor="@color/blue"
+        android:layout_marginTop="37dp"
+        android:id="@+id/exit"
+        android:text="Exit" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        style="@style/ColoredBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp" />
+
+
+</LinearLayout>

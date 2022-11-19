@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextLAyout2" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:background">@color/light_blue</item>
+        <item name="android:drawableEnd">@drawable/ic_create</item>
+        <item name="android:drawableTint">@color/blue</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+</resources>

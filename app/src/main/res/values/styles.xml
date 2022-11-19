@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="TextField" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="boxStrokeColor">@color/color</item>
+        <item name="errorEnabled">true</item>
+
+    </style>
+
+    <style name="Button" parent= "Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/rubik_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">121dp</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+    <style name="Text" parent= "Widget.MaterialComponents.TextView">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Input" parent= "Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="Image" parent= "">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="ColoredBottom" parent="@style/Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@color/blue</item>
+        <item name="menu">@menu/bottom_app_bar</item>
+        <item name="labelVisibilityMode">selected</item>
+    </style>
+
+    <style name="Appbar" parent="@style/Widget.MaterialComponents.Toolbar.Primary">
+        <item name="title">Profile</item>
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <style name="TextProfile" parent="">
+        <item name="android:fontFamily">@font/rubik_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextLAyout2" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:background">@color/light_blue</item>
+        <item name="android:drawableEnd">@drawable/ic_create</item>
+        <item name="drawableTint">@color/blue</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+
+</resources>
